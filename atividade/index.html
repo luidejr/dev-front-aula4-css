@@ -1,50 +1,42 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechConnect</title>
+    <title>TechFuture Summit</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="banner">
     <header> 
-        <h1>TechConnect</h1>
+        <h1>TechFuture Summit</h1>
     </header>
     
     <section>
         <h3>Sobre o Evento</h3>
         <ul class="listas">
-            <li>
-            Data
-            </li>
-            <li>
-            Local
-            </li>
-            <li>
-            Resumo do tema: ahudhuasdhuaç  
+            
+            <p><strong>Resumo do tema: O TechFuture Summit será um encontro de
+desenvolvedores e designers para discutir tendências em tecnologia e design.</strong></p>
+            <p>O encontro acontecerá no local xxx, no dia xx/xx/xxx, às xx:xx:xx h</p>
             </li>
         </ul>
-    </section >
+    </section class="galeria" >
         <h3>Palestrantes</h3>
-        <ul style="list-style: none; padding: 0; margin: 0;">
-            <li>
-            Nomes
-            </li>
-            <li>
-            Fotos
-            </li>
-            <li>
-            Mini biografia
-            </li>
-        </ul>
+            <p><strong>Mariana Silva</strong></p>
+            <img src="img/fotoMarina.png" alt="foto palestrante mariana" height="250px" width="200">
+            <p>Lucas Pereira</p>
+            <img src="img/fotoJoao.png" alt="foto palestrante João" height="250px" width="200">
+            <p>Pedro Oliveira</p>
+            <img src="img/fotoPedro.png" alt="foto palestrante Pedro" height="250px" width="200">
+        <br>
     <section>
         <form action="" method="post"></form>
         <fieldset>
-            <label for="Nome completo"> Nome Completo</label>
+            <label for="Nome completo"> Nome Completo:</label>
             <input type="name" name="" id="email">
-            <br>
-            <br>
-            <label for="Nome completo"> E-mail</label>
+            
+            <label for="Nome completo"> E-mail:</label>
             <input type="email" name="" id="email">
         </fieldset>
     </section>
@@ -58,9 +50,88 @@
 
     <p>
         <input type="checkbox" name="presencial" id="presencial">
-        <label for="ingresso">Aceite os termos</label>
+        <label for="ingresso">Aceitar os termos</label>
     </p>
+    <button id="mensagem">Enviar inscrição</button>
+    <!--<label for="confirmarEnvio">Enviar</label>
+    <input type="checkbox" id="confirmarEnvio" hidden>
+    <p id="mensagem">Inscrição realizada com sucesso!</p>
+
     
-    <button>Enviar</button>
+
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFuture Summit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="banner">
+    
+   
+    <header>
+        <h1>TechFuture Summit</h1>
+    </header>
+
+    <section class="sobre">
+        <h3>Sobre o Evento</h3>
+        <ul>
+            <li><strong>Data:</strong> XX/XX/XXXX</li>
+            <li><strong>Local:</strong> Nome do Local</li>
+            <li><strong>Resumo do tema:</strong> Discussão sobre tendências em tecnologia e design.</li>
+        </ul>
+    </section>
+        <h3>Palestrantes</h3>
+    <section class="palestrantes">
+        <div class="palestrante">
+            <img src="img/fotoMarina.png" alt="Mariana Silva">
+            <p><strong>Mariana Silva</strong> - Especialista em UI/UX</p>
+            <p>Empreendedora no setor de tecnologia,<br> 
+                focada em criar soluções inovadoras. <br>
+                Ela liderou várias startups de sucesso e <br> 
+                possui mais de 10 anos de experiência em <br>
+                desenvolvimento de produtos.</p>
+        </div>
+        <div class="palestrante">
+            <img src="img/fotoJoao.png" alt="Lucas Pereira">
+            <p><strong>João</strong> - Desenvolvedor Front-End</p>
+            <p>Com grande renome e reconhecimento <br>em todo mercado 
+            João poderá contribuir<br> com seu grande conhecimento técnico</p>
+        </div>
+        <div class="palestrante">
+            <img src="img/fotoPedro.png" alt="Pedro Oliveira">
+            <p><strong>Pedro Oliveira</strong> - Engenheiro de Software</p>
+            <p>Grande palestrante e atuante em grandes bigtechs internacionais</p>
+        </div>
+    </section>
+<footer>
+    <section class="inscricao">
+        <h3>Inscrição</h3>
+        <form action="" method="post">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label>Tipo de ingresso:</label>
+            <input type="radio" name="ingresso" id="presencial">
+            <label for="presencial">Presencial</label>
+
+            <input type="radio" name="ingresso" id="online">
+            <label for="online">Online</label>
+
+            <input type="checkbox" id="termos" required>
+            <label for="termos" required>Aceito os termos</label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</footer>
 </body>
 </html>
